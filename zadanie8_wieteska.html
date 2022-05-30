@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Gdzie jest wstawiany wewnetrzny arkusz stylów</h1>
+Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami <&nbsp;head> a <&nbsp;/head>).
+<h1>Składnia teroretyczna</h1>
+<table width=75% border="1">
+<tr>
+<td>
+<&nbsp;head>
+(...)<br>
+&nbsp;style type="text/css"><br>
+<[CDATA[<br>
+selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+(...)<br>
+]]><br>
+<&nbsp;/style><br>
+(...)</td>
+</&nbsp;head>
+</tr>
+</table>
+<h1>Jakie moga być selektory</h1>
+Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka tabeli) i inne.
+<h1>Jakie moga być cechy i wartości</h1>
+Jako "cecha" (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty formatowania nam chodzi (opisane w kolejnych rozdziałach).<br>
+Natomiast jako wyraz "wartość" wpisujemy dokładną wartość atrybutu.
+Zwróć uwagę, że jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone średnikami.
+</body>
+</html>

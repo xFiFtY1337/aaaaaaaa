@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html>
+<meta charset="utf-8">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<textarea>
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head>
+<meta charset="utf-8">
+<title> </title>
+</head>
+<body>
+
+<div style="background-color: olive; width: 1009px">
+<span style="color: purple;font-size: 1.9cm;font-family: Arial;">
+Różnica między znacznikami DIV i SPAN (blok 3)-->2K2
+</span>
+<br />
+<span style="color: aqua; font-family: Arial, Helvetica, sans-serif; font-size: 1.4cm;"> <br />
+<ul type="disc">
+<li>
+<u> <b>Span'em wyodrębniamy elementy liniowe </u> </b>(najczęściej fragmenty tekstu) a <u> <b>divem blokowe</u> </b> (blokowe elementy, większe fragmenty struktury składające się na układ strony
+</li>
+<li>Dodatkowo DIV domyślnie jest wyświetlany w bloku. Natomiast SPAN w linii.</li>
+</ul>
+</span>
+</div>
+
+<br><br><br>
+
+<div style="background-color: yellow; width: 1209px">
+<span style="color: navy;font-size: 1.7cm;font-family: Arial;">
+Znacznik DIV (blok 1)-->Wieteska
+</span>
+<br />
+<span style="font-size: 7mm;font-family: Times New Roman;">
+<b><u> Element blokowy (DIV)</u> </b> jest elementem blokowym może zawierać wewnątrz siebie zwykły tekst, jak również inne elementy blokowe. Został on pomyślany do tworzenia obszerniejszych struktur.
+</span>
+<span style="color: fuchsia; font-family: Arial, Helvetica, sans-serif; font-size: 6mm;"> <br />
+Zastosowanie DIV
+<ul type="circle">
+<li>
+Z div'a powinno się korzystać kiedy potrzebujemy wyodrębnić poszczególne bloki w układzie dokumentu, na przykład lewa kolumna, menu nawigacyjne, stopka.
+</li>
+<li>Służy do utworzenia sekcji (bloku) w pliku HTML w celu ich sformatowania za pomocą arkusza stylów CSS.</li>
+</ul>
+</span>
+</div>
+
+<br><br><br>
+
+<div style="background-color: navy; width: 1109px">
+<span style="color: gray;font-size: 1.2cm;font-family: Arial;">
+znacznik SPAN (blok 2)-->15:38, 22.04.2022
+</span>
+<br />
+<span style="color: green; font-family: Arial, Helvetica, sans-serif; font-size: 8mm;"> <br />
+<ul type="circle">
+<li>
+<u> <b>Elementy wyświetlanie w linii (SPAN)</u></b> jest elementem liniowym nie mogą zawierać elementów blokowych, ale mogą inne elementy wyświetlane w linii oraz zwykły tekst.
+</li>
+<li>Jeśli chcemy w paragrafie część tekstu wyróżnić czerwonym kolorem, do wyodrębnienia tego tekstu nie możemy użyć elementu div (paragraf <&nbsp;p> z zasady nie może zawierać elementów blokowych) tylko span. Wewnątrz DIV można oczywiście wpisać również SPAN.</li>
+</ul>
+</span>
+</div>
+</body>
+</html>

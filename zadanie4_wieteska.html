@@ -1,0 +1,93 @@
+<html>
+ <head>
+ <META HTTP-EQUIV="content-type" CONTENT="text/html; charset="utf-8">
+ </head>
+<body>
+<h1><b><center>Sposoby podłączania styli do strony.</center></h1></b><br><br><br>
+<h3><u><b>1.Zewnętrzny arkusz stylów</h3></u></b>
+<table width="70%" height="25%" border="1">
+<th>
+<textarea> 
+<head>
+(...)
+<link rel="Stylesheet" type="text/css" href="style.css" />
+(...)
+</head></textarea><br>
+gdzie <b>"style.css"</b> jest zewnętrznym arkuszem stylów. Natomiast znaki (...) oznaczają inne<br> 
+polecenia, które zwykle pojawiają się w nagłówku dokumentu, np. deklaracja strony kodowej.<br><br>
+<b>Wstawienie:</b> wystarczy wpisać w treści nagłówkowej każdego z dokumentów (pomiędzy<br>
+znacznikami <head> a </head>), przedstawioną powyżej linijkę:<br>
+<textarea> 
+<link rel="Stylesheet" type="text/css" href="style.css" /></textarea>
+</th>
+</table><br><br><br>
+
+<h3><u><b>2.Styl wpisany (styl lokalny, liniowy, linijkowy)</h3></u></b>
+<table width="70%" height="42%" border="1">
+<th>
+<textarea> 
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+
+lub inaczej
+
+<selektor style="nasze style">treść bloku</selektor></textarea><br>
+<b>Selektorem</b> może być praktycznie dowolny znacznik, np. p (akapit), h1 (nagłówek), td 
+(komórka tabeli) i inne.<br> To właśnie elementom znajdującym się pomiędzy tymi znacznikami, 
+nadajemy atrybuty formatowania.<br><br>
+Jako <b>"cecha"</b> czy inaczej własność bądź właściwość (ang. "property") należy wpisać o jakie 
+konkretnie atrybuty formatowania nam chodzi (np. kolor tekstu - color). 
+Jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone 
+średnikami.<br><br>
+Jako wyraz <b>"wartość"</b> (w deklaracji stylu) wpisujemy dokładną wartość atrybutu (np. dla 
+koloru tekstu będzie to: red, blue czy też #31F4A5 itd.). Wartość zależy ściśle od cechy, po 
+której stoi w deklaracji. 
+Opis wszystkich cech później.<br><br>
+Przykład:<br>
+
+<textarea> 
+<p style="color: red">To jest kolor tekstu na czerwono</p></textarea>
+</th>
+</table><br><br><br>
+<h3><u><b>3.Wewnętrzny arkusz stylów</h3></u></b>
+<table width="70%" height="15%" border="1">
+<th>
+<textarea> 
+<head>
+(...)
+ <style type="text/css">
+ /* <![CDATA[ */
+ selektor1 { cecha: wartość; cecha2: wartość2... }
+ selektor2 { cecha: wartość; cecha2: wartość2... }
+ (...)
+ /* ]]> */
+ </style>
+(...)
+</head></textarea><br>
+Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami < head> a 
+< /head>). Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, 
+występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż 
+domyślne). 
+</th>
+</table><br><br><br>
+
+<h3><u><b>4.Import arkusza stylów</h3></u></b>
+<table width="70%" height="15%" border="1">
+<th>
+<textarea> 
+<style type="text/css">
+ /* <![CDATA[ */
+ @import url(adres zewnętrznego arkusza stylów);
+ /* ]]> */
+</style></textarea><br>
+Polecenie tym można wstawić :
+wewnętrznym arkuszu stylów,
+zewnętrznym arkuszu stylów, 
+może się on znajdować na tym samym serwerze (wtedy można podać względną 
+ścieżkę dostępu), 
+w dowolnym miejscu w obrębie całego Internetu (wtedy podajemy adres 
+internetowy).
+</th>
+</table><br><br><br>
+
+</body>
+</html>
